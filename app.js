@@ -28,28 +28,18 @@ const getComputerChoice = () => {
 
 
 
-const playGame = (playerSelection, compuerSelection) => {
+const playGame = (userInput, computerInput) => {
 
- if(playerSelection === "rock" && compuerSelection === "rock"){
-  if(playerSelection === "paper" && compuerSelection === "paper"){
-  if(playerSelection === "scissors" && compuerSelection === "scissors"){
-    console.log('its a tie')
-  }
+        if (userInput === 'rock' && computerInput === 'paper') {
+          console.log('You lose! paper beats rock');
+        } else if (userInput === 'rock' && computerInput === 'scissors') {
+          console.log('You win! rock  beats scissors');
 
-  else if(playerSelection === "rock" && compuerSelection === "scissors" ||
-       playerSelection === "paper" && compuerSelection === "rock" ||
-       playerSelection === "scissors" && compuerSelection === "paper"){
-       
-        console.log('player won')
-  }
-  } 
-  
-  else {
-   console.log('player lost')
-  }
- }
-
-}
+        } else if(userInput === 'paper' && computerInput === "rock") {
+        } else {
+          console.log('You tie!');
+        }
+      }
 
 
 playerSelection = 'rock';
