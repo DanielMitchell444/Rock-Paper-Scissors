@@ -2,12 +2,19 @@ h1{
  text-align: center;
 }
 
-.buttons{
+.container{
  display: flex;
  justify-content: center;
  align-items: center;
  flex-direction: column;
    
+}
+
+
+.container p{
+ border: 1px solid black;
+ width: 300px;
+ height: 80px;
 }
 
 
@@ -21,5 +28,5 @@ h1{
  display: flex;
  justify-content: center;
  align-items: center;
- flex-direction: row;
+ flex-direction: column;
 }
